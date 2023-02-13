@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        @font-face {
+            font-family: ‘UD Digi Kyokasho NP-B’;
+            src: url(nowplaying/sewerslvt/UDDigiKyokashoN-B.ttc);
+        }
+
+        @font-face {
+            font-family: ‘UD Digi Kyokasho NP-R’;
+            src: url(nowplaying/sewerslvt/UDDigiKyokashoN-R.ttc);
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: #181818;
+        }
+
+        #main {
+            position: relative;
+            margin: 10% auto 0;
+            padding: 200px;
+            border-radius: 30px;
+        }
+
+        #bg {
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            background: linear-gradient(45deg, #8100ff, #c300ff, #00f7ff, #c300ff, #8100ff);
+            background-size: 400%;
+            width: calc(100% + 5px);
+            height: calc(100% + 5px);
+            border-radius: 30px;
+            z-index: -1;
+            animation: animate 20s linear infinite;
+            filter: blur(50px);
+            opacity: 0.99;
+        }
+
+        .links {
+            border-radius: 30px;
+            border-width: 0.2px;
+            color: #181818;
+            display: grid;
+            position: absolute;
+            top: 65%;
+        }
+
+        span,
+        a {
+            font-family: UD Digi Kyokasho NP-B;
+            text-shadow: 1px 1px 1px #8100ff, 0 0 1em #c300ff, 0 0 0.2em #00f7ff;
+        }
+
+        a:link {
+            color: #181818;
+        }
+
+        a:hover {
+            color: #00f7ff;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="bg">
+        </div>
+        <span>хуйня в стиле now playing</span><br>
+        <div id="links">
+            <div class="links">
+                <a href="/nowplaying/sewerslvt/sewer1.html" class="sewer">all the joy in life was gone once you left</a>
+                <a> </a>
+                <a href="/nowplaying/xyecoc/huy.html" class="pidor">трек желание "не молоко" <br>первый трек</a>
+            </div>
+        </div>
+</body>

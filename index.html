@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        @font-face {
+            font-family: ‘UD Digi Kyokasho NP-B’;
+            src: url(nowplaying/sewerslvt/UDDigiKyokashoN-B.ttc);
+        }
+
+        @font-face {
+            font-family: ‘UD Digi Kyokasho NP-R’;
+            src: url(nowplaying/sewerslvt/UDDigiKyokashoN-R.ttc);
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            background-color: #181818;
+        }
+        #main {
+            position: relative;
+            margin: 10% auto 0;
+            padding: 200px;
+            border-radius: 30px;
+        }
+        #bg {
+            content: '';
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            background: linear-gradient(45deg, #8100ff, #c300ff, #00f7ff, #c300ff, #8100ff);
+            background-size: 400%;
+            width: calc(100% + 5px);
+            height: calc(100% + 5px);
+            border-radius: 30px;
+            z-index: -1;
+            animation: animate 20s linear infinite;
+            filter: blur(50px);
+            opacity: 0.99;
+        }
+        .links {
+            border-radius: 30px;
+            border-width: 0.2px;
+            color: #181818;
+            display: grid;
+            position: absolute;
+            top: 65%;
+        }
+        #mainsite {
+            left: 200px;
+        }
+        #np {
+            left: 280px;
+        }
+        #embed {
+            left: 360px;
+        }
+        span {
+            font-family: UD Digi Kyokasho NP-B;
+            text-shadow: 1px 1px 1px #8100ff, 0 0 1em #c300ff, 0 0 0.2em #00f7ff;
+        }
+        @keyframes animate {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 400% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="bg">
+        </div>
+        <span>какая  то  хуйня</span><br>
+        <div id="links">
+            <div id="mainsite" class="links">
+                <a href="https://pathfindertogami.github.io" class="mainsite"><svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M5.77778 10.2222V18C5.77778 19.1046 6.67321 20 7.77778 20H12M5.77778 10.2222L11.2929 4.70711C11.6834 4.31658 12.3166 4.31658 12.7071 4.70711L17.5 9.5M5.77778 10.2222L4 12M18.2222 10.2222V18C18.2222 19.1046 17.3268 20 16.2222 20H12M18.2222 10.2222L20 12M18.2222 10.2222L17.5 9.5M17.5 9.5V6M12 20V15" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg></a>
+            </div>
+            <div id="np" class="links">
+                <a href="/nowplaying/index.html" class="np"><svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8 17.1783V6.82167C8 6.03258 8.87115 5.55437 9.53688 5.97801L17.6742 11.1563C18.2917 11.5493 18.2917 12.4507 17.6742 12.8437L9.53688 18.022C8.87115 18.4456 8 17.9674 8 17.1783Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> </svg></a>
+            </div>
+            <div id="embed" class="links">
+                <a href="/embed/index.html" class="embed"><svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M3 10V18C3 19.1046 3.89543 20 5 20H19C20.1046 20 21 19.1046 21 18V10M3 10V6C3 4.89543 3.89543 4 5 4H19C20.1046 4 21 4.89543 21 6V10M3 10H21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /> <circle cx="6" cy="7" r="1" fill="#000000" /> <circle cx="9" cy="7" r="1" fill="#000000" /> </svg></ 
+            </div>
+        </div>
+    </div>
+</body>
