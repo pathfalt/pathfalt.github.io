@@ -68,6 +68,9 @@
                 background-position: 0 0;
             }
         }
+        #iframe {
+            z-index: -2;
+        }
     </style>
 </head>
 <body>
@@ -87,5 +90,7 @@
             </div>
         </div>
     </div>
-    <iframe src="https://www.youtube.com/embed/jl45v7hzpxg?autoplay=1&amp;controls=0&amp;loop=1&playlist=jl45v7hzpxg" allow="accelerometer; autoplay; encrypted-media; gyroscope; loop; repeat; picture-in-picture" width="1" height="1" frameborder="0"></iframe>
+    <div id="iframe">
+        <iframe src="https://www.youtube.com/embed/jl45v7hzpxg?autoplay=1&amp;controls=0&amp;loop=1&playlist=jl45v7hzpxg" allow="accelerometer; autoplay; encrypted-media; gyroscope; loop; repeat; picture-in-picture" width="1" height="1" frameborder="0"></iframe>
+    </div>
 </body>
